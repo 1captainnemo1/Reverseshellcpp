@@ -12,9 +12,11 @@ PLEASE DO NOT UPLOAD TO VIRUSTOTAL !!!
 
 Start a netcat listener on port 8080 using nc -lvp 8080
 
-Once the victim executes the app, the decoy process (calc.exe) will fire up in the foregroud , while a reverse shell will fire up in the background, giving you a DOS prompt.
+Once the victim executes the app, the decoy process (calc.exe) will fire up in the foregroud on the victim's end , while a reverse shell will fire up in the background, giving you a DOS prompt on the attacker's end (nc listener).
 
 Type in POWERSHELL on the DOS prompt to leverage the post exploitation module.
+
+PS: Even if the victim decides to exit the calc.exe the reverse shell session will be on , as they are running on 2 different processes.
 
 Cheers
 
