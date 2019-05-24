@@ -38,3 +38,7 @@ When u see that the IP and the port numbers are same after 5-6 last pings , use 
 
 https://youtu.be/I-BsI-Yeh4w
 
+A new incorporation and work in progress is the Reverse_msf.cpp module. Post compilation using the standard methods Metasploit DID grant a meterpreter session , yes, but most of the post capture modules are not working , and it seems either I have to incorporate the functions , which will OBVIOUSLY cause AV detection as those are the signature methods/functions that an antivirus looks for , or use a different payload in metasploit to get a RAW shell( this is afterall a netcat RAW shell) and upgrade that TO A METERPRETER SESSION(shell-to-meterpreter) post capture module, or write my own post exploit modules (A HUGE PROCESS).
+Thus WORK IN PROGRESS for reverse_msf.cpp.
+
+https://youtu.be/CM0XtXUoXRQ
